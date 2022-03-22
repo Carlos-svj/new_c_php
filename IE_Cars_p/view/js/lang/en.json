@@ -1,0 +1,25 @@
+{
+    "en" : {
+        "Vehicles" : "Vehicles",
+        "Home" : "Home",
+        "Shop" : "Shop",
+        "Logs" : "Logs",
+        "Languages": "Languages",
+        "Valencian":"Valencian",
+        "Spanish":"Spanish",
+        "English":"English",
+        "Id_vehicle":"Id_vehicle",
+        "Brand": "Brand",
+        "Model":"Model",
+        "Operations": "Operations",
+        "Create Car": "Create Car",
+        "Create Car List":"Create Car List",
+        "Delete Car List":"Delete Car List",
+        "Car List":"Car List",
+        "Contact":"Contact",
+        "Email":"Email",
+        "Direccion":"Direccion"
+        
+        
+    }
+}

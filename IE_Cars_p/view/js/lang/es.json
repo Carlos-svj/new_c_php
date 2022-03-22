@@ -1,0 +1,22 @@
+{
+    "es" : {
+        "Vehicles" : "Nuestros vehiculos",
+        "Home" : "Inicio",
+        "Logs" : "Registro de errores",
+        "Languages": "Lenguajes",
+        "Valencian":"Valenciano",
+        "Spanish":"Español",
+        "English":"Ingles",
+        "Id_vehicle":"Codigo coche",
+        "Brand": "Marca",
+        "Model":"Modelo",
+        "Operations": "Operaciones",
+        "Create Car": "Crear Coche",
+        "Create Car List":"Crear Lista de Coches",
+        "Delete Car List":"Eliminar lista de coches",
+        "Car List":"Lista de Coches",
+        "Contact":"Contacto",
+        "Email":"Email",
+        "Direccion":"Dirección"
+    }
+}

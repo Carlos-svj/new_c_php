@@ -1,0 +1,22 @@
+{
+    "val" : {
+        "Vehicles" : "Vehicles",
+        "Home" : "Inici",
+        "Logs" : "Registre de errors",
+        "Languages": "Llenguatges",
+        "Valencian":"Valencià",
+        "Spanish":"Espanyol",
+        "English":"Anglés",
+        "Id_vehicle":"Codi del cotxe",
+        "Brand": "Marca",
+        "Model":"Model",
+        "Operations": "Operacions",
+        "Create Car": "Crear Cotxe",
+        "Create Car List":"Crear Llista de Cotxes",
+        "Delete Car List":"Eliminar Lista de Cotxes",
+        "Car List":"Llista de Cotxes",
+        "Contact":"Contacte",
+        "Email":"Email",
+        "Direccion":"Direcció"
+    }
+}
