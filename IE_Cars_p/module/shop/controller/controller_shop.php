@@ -17,7 +17,9 @@ switch ($_GET['op']) {
 
         try {
             $daocar = new DAOshoppage();
-            $rdo = $daocar->select_all_cars();
+            $rdo = $daocar->select_all_cars($_GET['items_page'],$_POST['total_prod']);
+            /* echo json_encode($rdo);
+            exit; */
         } catch (Exception $e) {
             echo json_encode("error list ");
             exit;
@@ -35,14 +37,14 @@ switch ($_GET['op']) {
         break;
 
     case 'details_s';
-       /*  echo json_encode($_GET['id']);
-        exit; */
+        /*  echo json_encode($_GET['id']);
+        exit; */ 
         $array = array();
 
         try {
             $daocar = new DAOshoppage();
             $rdo = $daocar->select_car($_GET['id']);
-          
+         
         } catch (Exception $e) {
             echo json_encode("error1rcatch_details");
             exit;
@@ -65,6 +67,7 @@ switch ($_GET['op']) {
         }
 
         echo json_encode($array);
+        
         break;
 
     case 'g_maps';

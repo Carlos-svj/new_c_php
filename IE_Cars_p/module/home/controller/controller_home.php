@@ -34,9 +34,9 @@ switch ($_GET['op']) {
     case 'type';
     /*    $data = 'hola validate php';
     die('<script>console.log(' . json_encode($data) . ');</script>');   */
-     echo json_encode($_POST['loaded'], $_POST['items']);
-        exit;
-     /*    try {
+     /* echo json_encode($_POST['loaded'], $_POST['items']);
+        exit; */
+        try {
             $daocar = new DAOhomepage();
             $rdo = $daocar->select_type($_POST['items'],$_POST['loaded']);
         } catch (Exception $e) {
@@ -52,7 +52,7 @@ switch ($_GET['op']) {
                 array_push($info, $row);
             }
             echo json_encode($info);
-        } */
+        }
         break;
 
         case 'count_type':

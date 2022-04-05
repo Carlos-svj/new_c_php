@@ -1,8 +1,8 @@
 
 function loadCars(items_page = 10, total_prod = 0) {
 
-    console.log("items_page: " + items_page);
-    console.log("total_prod: " + total_prod);
+    /* console.log("items_page: " + items_page);
+    console.log("total_prod: " + total_prod); */
 
     var filters = localStorage.getItem('filters') || false;
 
@@ -48,7 +48,7 @@ function loadCars(items_page = 10, total_prod = 0) {
 
         }).catch(function () {
             console.log("catch loadcars");
-            window.location.href = "index.php?page=exception&op=503&read";
+            /* window.location.href = "index.php?page=exception&op=503&read"; */
         });
 }
 
@@ -61,6 +61,7 @@ function loadCar_details() {
         'GET', 'JSON')
         .then(function (data) {
 
+            console.log('id');
             console.log(data);
 
             $('<div></div>')
@@ -112,7 +113,7 @@ function loadCar_details() {
             
         }).catch(function () {
             console.log("catch shoppage.js");
-/*             window.location.href = "index.php?page=exception&op=503&read";  */
+/*          window.location.href = "index.php?page=exception&op=503&read";  */
         });
     /* }) */
 }
@@ -132,7 +133,7 @@ function load_pagination() {
         var total_pages = 0;
         var total_prod = data[0].n_cars;
 
-        if (total_prod >= 10) {
+        if (total_prod >= 3) {
             total_pages = total_prod % 10;
         } else {
             total_pages = 1;
@@ -264,7 +265,7 @@ function load_filters() {
         })
         .catch(function (textStatus) {
             if (console && console.log) {
-                window.location.href = "index.php?page=exception&op=503&read"
+/*              window.location.href = "index.php?page=exception&op=503&read"*/
                 console.log("filters error");
                 console.log("La solicitud ha fallado: " + textStatus);
             }

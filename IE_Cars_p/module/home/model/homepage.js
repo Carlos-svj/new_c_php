@@ -25,8 +25,8 @@ function load_more() {
         console.log(data);
       total_items = data[0].count;
       console.log("total items" + total_items);
-       loadTypes();
-       $(document).on("click",'button.load_more', function (){
+/*        loadTypes();
+ */ $(document).on("click",'button.load_more', function (){
           console.log("click load more");
 
         var items = $('.type_elements').length + 2;

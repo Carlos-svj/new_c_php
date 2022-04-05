@@ -1,0 +1,29 @@
+<form id="register__form" method="post">
+    <div class="form__content">
+        <div class="form__input">
+            <label for="username"><b>Username</b></label>
+            <input type="text" id="username" name="username" placeholder="Enter Username">
+            <font color="red">
+                <span id="error_username" class="error"></span>
+            </font>
+        </div>
+        <div class="form__input">
+            <label for="email"><b>Email</b></label>
+            <input type="text" id="email" name="email" placeholder="Enter Email">
+            <font color="red">
+                <span id="error_email" class="error"></span>
+            </font>
+        </div>
+        <div class="form__input">
+            <label for="password"><b>Password</b></label>
+            <input type="password" id="password" name="password" placeholder="Enter Password">
+            <font color="red">
+                <span id="error_password" class="error"></span>
+            </font>
+        </div>
+    </div>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+    <div class="button_container">
+        <input class="button" id="register" type="button" value="Enter" />
+    </div>
+</form>

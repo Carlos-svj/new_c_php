@@ -2,15 +2,18 @@
 //////
 /* if ((isset($_GET['page'])) && ($_GET['page']==="controller_home") ){
 	include("view/inc/top_page_home.html");
-}else if ((isset($_GET['page'])) && ($_GET['page']==="controller_shop") ){
+} else if ((isset($_GET['page'])) && ($_GET['page']==="controller_shop") ){
 	include("view/inc/top_page_shop.html");
 
-}else{
+} else {
 	include("view/inc/top_page.html");
 } */
 //////
 if ((isset($_GET['page'])) && ($_GET['page'] === "shop")) {
 	include_once("view/inc/top_page_shop.html");
+}
+if ((isset($_GET['page'])) && ($_GET['page'] === "login")) {
+	include_once("view/inc/top_page_login.html");
 }
 if ((isset($_GET['page'])) && ($_GET['page'] === "homepage")) { //comentar las tres lineas para que cargue de una yau 
 	include_once("view/inc/top_page_home.html");

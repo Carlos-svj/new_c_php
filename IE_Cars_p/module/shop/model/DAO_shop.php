@@ -4,9 +4,9 @@ include($path . "model/connect.php");
 
 class DAOshoppage {
 
-    function select_all_cars() {
+    function select_all_cars($items_page, $total_prod) {
 
-        $sql = "SELECT * FROM cars ORDER BY brand";
+        $sql = "SELECT * FROM cars ORDER BY brand LIMIT $items_page, $total_prod, ";
 
         $conexion = connect::con();
         $res = mysqli_query($conexion, $sql);

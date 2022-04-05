@@ -12,6 +12,9 @@ switch ($_GET['page']) {
 	case "exception";
 		include("module/exceptions/controller/controller_exc.php");
 		break;
+	case "login";
+		include("module/exceptions/controller/controller_login.php");
+		break;
 	default;
 		include("module/home/view/home.html");
 		break;

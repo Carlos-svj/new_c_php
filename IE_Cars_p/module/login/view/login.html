@@ -1,0 +1,27 @@
+<form id="login__form" method="post">
+    <div class="container">
+        <div class="form__input">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="username" name="username" required>
+            <font color="red">
+                <span id="error_username" class="error"></span>
+            </font>
+        </div>
+        <div class="form__input">
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="password" name="password" required>
+            <font color="red">
+                <span id="error_password" class="error"></span>
+            </font>
+        </div>
+        <div class="error_login"></div>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        <div class="button_container">
+            <input class="button" id="login" type="button" value="Enter" />
+        </div>
+        <div class="container">
+            <a class="button" id="login" type="button" href="index.php?page=controller_login&op=register_view">Create
+                new account</a>
+        </div>
+    </div>
+</form>
